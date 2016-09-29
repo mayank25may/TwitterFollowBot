@@ -13,3 +13,4 @@ pip-selfcheck.json
 dist/
 TwitterFollowBot.egg-info/
 .idea
+config-sendx.txt
