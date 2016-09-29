@@ -23,7 +23,7 @@ def follow_user_like_tweet(file_name, count):
 		for num in range(0,int(count)):
 			for phrase in f:
 				print "Following the user and liking the tweet with phrase " + phrase
-				my_bot.auto_fav_and_follow(phrase, count=1)
+				my_bot.auto_fav_and_follow(phrase, count)
 
 def follow_user_retweet(file_name, count):
 	file_path = dir_path + "/data/" + file_name
@@ -33,7 +33,7 @@ def follow_user_retweet(file_name, count):
 		for num in range(0,int(count)):
 			for phrase in f:
 				print "RTing the tweet with phrase " + phrase + " and following the user"
-				my_bot.auto_rt_and_follow(phrase, count=1)
+				my_bot.auto_rt_and_follow(phrase, count)
 
 def follow_user_retweet_add_to_list(file_name, count, list_name):
 	file_path = dir_path + "/data/" + file_name
